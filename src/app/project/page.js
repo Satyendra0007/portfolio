@@ -1,9 +1,13 @@
 import React from 'react'
+import data from "@/app/data/projectdata.js"
+import Projectcard from '../components/Projectcard'
 
 export default function page() {
   return (
-    <div>
-      <h1 className='bg-red-800'>project page</h1>
-    </div>
+    <section className='projects px-4 flex  justify-center items-center gap-5 flex-wrap'>
+      {data.map((el, index) => {
+        return <Projectcard key={index} url={el.url} name={el.name} desc={el.desc} gitLink={el.gitLink} replLink={el.replLink} available={el.avilable} />
+      })}
+    </section>
   )
 }

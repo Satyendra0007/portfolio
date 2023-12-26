@@ -22,19 +22,19 @@ export default function page() {
 
   return (
     <div>
-      <section id="skills" className="skills ">
+      <section id="skills" className="skills min-h-[72vh] ">
         <h1 className="text-center my-4 text-2xl font-bold">Skills</h1>
-        <div className="webDevlopment">
-          <h1 className="text-center my-2 text-sm font-semibold">Web Devlopment</h1>
+        <div className="webDevlopment my-8">
+          <h1 className="text-center my-5 text-sm font-semibold">Web Devlopment</h1>
           <div className="flex  justify-center items-center gap-5 flex-wrap">
             {webImageArray.map((src, index) => {
               return <Skillcard key={index} image={src} text={webText[index]} />
             })}
           </div>
         </div>
-        <div class="programing-Language my-5">
-          <h1 class="text-center my-5 text-sm font-semibold">Programing Languages</h1>
-          <div class="flex  justify-center items-center gap-5 flex-wrap">
+        <div className="programing-Language my-8">
+          <h1 className="text-center my-5 text-sm font-semibold">Programing Languages</h1>
+          <div className="flex  justify-center items-center gap-5 flex-wrap">
             {pgImageArray.map((src, index) => {
               return <Skillcard key={index} image={src} text={pgText[index]} />
             })}
