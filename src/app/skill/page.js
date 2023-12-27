@@ -13,7 +13,6 @@ import c from "@/app/images/c.png"
 import java from "@/app/images/java.png"
 import cpp from "@/app/images/c++.png"
 
-
 export default function page() {
   const webImageArray = [html, css, js, react, nextjs, bootstrap, mongodb, tailwind];
   const webText = ["html", "css", "javascript", "react", "nextjs", "bootstrap", "mongodb", "tailwind"];

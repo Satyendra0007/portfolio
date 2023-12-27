@@ -4,7 +4,6 @@ import code from '@/app/images/code.png'
 import view from "@/app/images/view.png"
 
 export default function Projectcard({ url, name, desc, gitLink, replLink, available }) {
-  console.log(replLink)
   return (
     <div>
       <div className="list border border-red-300 p-3 m-2 rounded-md shadow-xl space-y-2 mx-auto w-screen md:w-[28rem]">

@@ -49,11 +49,11 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="education p-10 ">
+      <section className="education p-10  ">
         <h1 className="text-center my-4 text-2xl font-bold ">Education</h1>
         <div className="flex flex-wrap justify-center items-center gap-5">
           <div
-            className="box h-48 w-48  border-2 border-red-600 rounded-full flex flex-col justify-center items-center shadow-2xl text-sm">
+            className="box h-48 w-48  border-2 border-red-600 rounded-full flex flex-col justify-center items-center shadow-2xl text-sm ">
             <h1 className="font-semi-bold text-2xl text-primary ">10TH</h1>
             <p> BORD : BSEB</p>
             <p>YEAR : 2018</p>

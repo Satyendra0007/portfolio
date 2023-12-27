@@ -15,13 +15,13 @@ export default function Navbar() {
     });
 
     document.onclick = (e) => {
-      document.getElementById("menu").style.left = "-192px";
+      document.getElementById("menu").style.left = "-208px";
       document.body.classList.remove("stop-scrolling");
     };
   }
   return (
     <>
-      <div className="flex justify-between px-5 py-4 bg-white/80 shadow-xl sticky top-0 left-0 right-0 ">
+      <div className="flex justify-between px-5 py-4 bg-white/60 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm">
         <div id="hamburger" className="md:hidden">
           <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
           <div className="line w-5 h-[3px] bg-primary m-1.5"></div>
@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* --------------------Nav link for sm devices-------------------- */}
         <div
           id="menu"
-          className="absolute top-0 -left-48  bg-white/90  w-48 h-screen border shadow-xl transition-all duration-700 ease-in-out md:hidden"
+          className="absolute top-0 -left-52  bg-white/70 w-52 h-screen border shadow-xl backdrop-blur-md transition-all duration-700 ease-in-out md:hidden"
         >
           <div className="logo flex justify-center border-b border-b-red-400 py-4 ">
             <CiUser size={"4rem"} color="red" />
