@@ -24,11 +24,10 @@
   padding: 0;
 }
 
-/* body {
- 
-} */
+body {}
 
-/* body ::before {
+/* 
+nav ::before {
   content: "";
   position: absolute;
   top: 0;
@@ -36,13 +35,13 @@
   right: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
   background-image: url("./images/typing.jpg");
   background-color: white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  z-index: -2;
   filter: blur(2px);
 
 } */

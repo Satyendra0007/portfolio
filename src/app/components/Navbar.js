@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import { CiUser, CiHome } from "react-icons/ci";
-import { SiAboutdotme } from "react-icons/si";
-import { GiSkills } from "react-icons/gi";
-import { GoProject } from "react-icons/go";
+import { usePathname } from "next/navigation";
+import { CiUser } from "react-icons/ci";
+import navLinks from "@/app/data/navLink"
 
 export default function Navbar() {
+  const pathName = usePathname();
+
   if (typeof window !== "undefined") {
     document.getElementById("hamburger").addEventListener("click", (e) => {
       e.stopPropagation();
@@ -22,7 +21,7 @@ export default function Navbar() {
   }
   return (
     <>
-      <div className="flex justify-between px-5 py-4 bg-white/60 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm z-10">
+      <div className="flex justify-between px-5 py-4 bg-red-100/60 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm z-10">
         <div id="hamburger" className="md:hidden">
           <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
           <div className="line w-5 h-[3px] bg-primary m-1.5"></div>
@@ -38,27 +37,13 @@ export default function Navbar() {
         <div className="navLink hidden my-auto md:block ">
           <nav>
             <ul className="flex gap-7 justify-center items-center text-sm">
-              <li className=" font-semibold text-primary cursor-pointer hover:underline underline-offset-4 under ">
-                <Link className=" " href="/">
-                  {" "}
-                  Home
-                </Link>
-              </li>
-              <li className=" font-semibold text-primary cursor-pointer hover:underline underline-offset-4 under ">
-                <Link className=" " href="/skill">
-                  Skills
-                </Link>
-              </li>
-              <li className=" font-semibold text-primary cursor-pointer hover:underline underline-offset-4 under ">
-                <Link className=" " href="/about">
-                  About
-                </Link>
-              </li>
-              <li className=" font-semibold text-primary cursor-pointer hover:underline underline-offset-4 under ">
-                <Link className=" " href="/project">
-                  Projects
-                </Link>
-              </li>
+              {navLinks.map(({ name, link }) =>
+                <li key={name} className={`${pathName === link ? "bg-red-600 text-white font-normal" : ""} font-semibold text-primary cursor-pointer hover:underline underline-offset-4 py-1 px-2 rounded-md`}>
+                  <Link className=" " href={link}>
+                    {name}
+                  </Link>
+                </li>
+              )}
             </ul>
           </nav>
         </div>
@@ -66,49 +51,24 @@ export default function Navbar() {
         {/* --------------------Nav link for sm devices-------------------- */}
         <div
           id="menu"
-          className="absolute top-0 -left-52  bg-white/70 w-52 h-screen border shadow-xl backdrop-blur-sm transition-all duration-700 ease-in-out md:hidden"
+          className="absolute top-0 -left-52  bg-red-100/80 w-52 h-screen border shadow-xl backdrop-blur-sm transition-all duration-700 ease-in-out md:hidden"
         >
           <div className="logo flex justify-center border-b border-b-red-400 py-4 ">
             <CiUser size={"4rem"} color="red" />
           </div>
           <nav>
             <ul className="">
-              <li>
-                <Link
-                  href="/"
-                  className="text-xs py-4 px-2 cursor-pointer text-primary font-semibold border-b border-red-200 flex gap-3 items-center  "
-                >
-                  <CiHome size={"1.2rem"} />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/skill"
-                  className="text-xs py-4 px-2 cursor-pointer text-primary font-semibold border-b border-red-200 flex gap-3 items-center  "
-                >
-                  <GiSkills size={"1.2rem"} />
-                  Skill
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-xs py-4 px-2 cursor-pointer text-primary font-semibold border-b border-red-200 flex gap-3 items-center  "
-                >
-                  <SiAboutdotme size={"1.2rem"} />
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/project"
-                  className="text-xs py-4 px-2 cursor-pointer text-primary font-semibold border-b border-red-200 flex gap-3 items-center  "
-                >
-                  <GoProject size={"1.2rem"} />
-                  Projects
-                </Link>
-              </li>
+              {navLinks.map(({ name, link, Icon }) =>
+                <li key={name} className={`${pathName === link ? "bg-red-200  font-normal" : ""} rounded-md`}>
+                  <Link
+                    href={link}
+                    className="text-xs py-4 px-2 cursor-pointer text-primary font-semibold border-b border-red-200 flex gap-3 items-center  "
+                  >
+                    {Icon}
+                    {name}
+                  </Link>
+                </li>
+              )}
             </ul>
           </nav>
         </div>

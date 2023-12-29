@@ -8,7 +8,6 @@ import image1 from "@/app/images/image1.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-
 export default function Page() {
 
   const el = useRef(null);
@@ -42,13 +41,13 @@ export default function Page() {
           </p>
           <div className=""> I am a <span ref={el} /></div>
           <div className="buttons space-x-3 mt-3">
-            <button id="Github" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 " onClick={() => { window.location.href = "https://github.com/Satyendra0007" }}>
+            <button id="Github" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out " onClick={() => { window.location.href = "https://github.com/Satyendra0007" }}>
               <span className="flex gap-1 justify-center items-center">
                 <p>GitHub</p>
                 <FaGithub />
               </span>
             </button>
-            <button id="Replit" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105" onClick={() => { window.location.href = "https://replit.com/@Satyendra03" }}>
+            <button id="Replit" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://replit.com/@Satyendra03" }}>
               <span className="flex gap-1 justify-center items-center">
                 <p>Replit</p>
                 <SiReplit color="red" />
