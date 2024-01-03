@@ -5,7 +5,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 export default function Footer() {
   return (
-    <footer className="pt-10">
+    <footer className="pt-5">
       <div className="flex justify-center  items-center gap-10 py-5 bg-red-100">
         <a href="https://github.com/Satyendra0007" target="_blank">
           <FaGithub size={25} color='red' />

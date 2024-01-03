@@ -21,7 +21,7 @@ export default function Navbar() {
   }
   return (
     <>
-      <div className="flex justify-between px-5 py-4 bg-red-100/60 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm z-10">
+      <div className="flex justify-between px-5 py-4 bg-red-100/50 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm z-10 md:py-5">
         <div id="hamburger" className="md:hidden">
           <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
           <div className="line w-5 h-[3px] bg-primary m-1.5"></div>

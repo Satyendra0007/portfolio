@@ -1,9 +1,48 @@
-import React from 'react'
+import Image from "next/image"
+import dhoni from '@/app/images/dhoni.jpeg'
+import harry from '@/app/images/harry.jpeg'
 
 export default function page() {
   return (
-    <div>
-      <h1 className="text-green-600 bg-cyan-700">About page</h1>
-    </div>
+    <>
+      <section className=' intro py-7 px-2 bg-red-400'>
+        <h1 className='text-xl font-bold text-center'>About me</h1>
+        <div className="box bg-white/30 backdrop-blur-3xl rounded-xl shadow-lg md:w-1/2 mx-auto">
+          <div className=" about-me flex justify-around text-sm p-3 mt-3 ">
+            <p className='text-center font-semibold tracking-wider '><span className='text-lg p-1  tracking-wider bg-gradient-to-r from-rose-600 to-purple-600  text-transparent bg-clip-text font-bold'>Hello!</span>
+              I am Satyendra, currently pursuing my Bachelor &apos; s in Computer Applications (BCA) and currently in the exciting fifth semester of my academic journey. With a keen interest in the world of programming, I find myself deeply immersed in the intricacies of coding and web development.
+            </p>
+          </div>
+          <div className="image">
+
+          </div>
+        </div>
+      </section>
+      <section className='idials  py-7'>
+        <h1 className='text-xl font-bold text-center mb-5'>My Idols</h1>
+        <div className='cantainer bg-red-400 px-5 py-10 space-y-6 md:space-x-0 md:flex justify-center items-center gap-11'>
+          <div className="card px-3 py-8 bg-white/40 backdrop-blur-3xl rounded-xl shadow-lg  md:h-[82vh]  md:w-80">
+            <div className="img">
+              <Image className="w-full h-80" src={dhoni} alt=""></Image>
+            </div>
+            <div className="content">
+              <h1 className="text-lg font-bold text-center my-2 text-primary ">MS Dhoni</h1>
+              <p className='text-center text-xs font-semibold tracking-wider '> I&apos;m huge of Mahendra Singh Dhoni, affectionately known as Captain Cool. Hailing from Ranchi, India, Dhoni has etched his name in the annals of cricketing history with his astute captaincy, lightning-quick glovework, and the ability to finish matches with unmatched calmness.</p>
+            </div>
+          </div>
+
+          <div className="card px-3 py-8 bg-white/40 backdrop-blur-3xl rounded-xl shadow-lg md:h-[82vh] md:w-80">
+            <div className="img">
+              <Image className="w-full h-80" src={harry} alt=""></Image>
+            </div>
+            <div className="content">
+              <h1 className="text-lg font-bold text-center my-2 text-primary ">Code With Harry</h1>
+              <p className='text-center text-xs font-semibold tracking-wider '> Meet my coding idol, the one and only Code with Harry! 🚀  Harry has been my go-to guide in the vast world of programming. From Python to web development, his tutorials are not just informative but also infused with a unique blend of enthusiasm and humor.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </>
   )
 }
