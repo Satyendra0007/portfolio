@@ -5,7 +5,7 @@ import harry from '@/app/images/harry.jpeg'
 export default function page() {
   return (
     <>
-      <section className=' intro py-7 px-2 bg-red-400'>
+      <section className=' intro py-7 px-2 bg-red-200'>
         <h1 className='text-xl font-bold text-center'>About me</h1>
         <div className="box bg-white/30 backdrop-blur-3xl rounded-xl shadow-lg md:w-1/2 mx-auto">
           <div className=" about-me flex justify-around text-sm p-3 mt-3 ">
@@ -20,7 +20,7 @@ export default function page() {
       </section>
       <section className='idials  py-7'>
         <h1 className='text-xl font-bold text-center mb-5'>My Idols</h1>
-        <div className='cantainer bg-red-400 px-5 py-10 space-y-6 md:space-x-0 md:flex justify-center items-center gap-11'>
+        <div className='cantainer bg-red-200 px-5 py-10 space-y-6 md:space-x-0 md:flex justify-center items-center gap-11'>
           <div className="card px-3 py-8 bg-white/40 backdrop-blur-3xl rounded-xl shadow-lg  md:h-[82vh]  md:w-80">
             <div className="img">
               <Image className="w-full h-80" src={dhoni} alt=""></Image>
