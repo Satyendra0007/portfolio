@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @layer base {
   .bg-primary {
     @apply bg-red-600;
@@ -18,30 +23,3 @@
     @apply h-full overflow-hidden
   }
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {}
-
-/* 
-nav ::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("./images/typing.jpg");
-  background-color: white;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: -2;
-  filter: blur(2px);
-
-} */
