@@ -21,7 +21,7 @@ export default function Navbar() {
   }
   return (
     <>
-      <div className="flex justify-between px-5 py-4 bg-red-100/50 shadow-xl sticky top-0 left-0 right-0  backdrop-blur-sm z-10 md:py-5">
+      <div className=" container mx-auto flex justify-between px-5 py-4 bg-red-100/50 shadow-xl rounded-full sticky top-2 left-2 right-2  backdrop-blur-sm z-10 md:py-5">
         <div id="hamburger" className="md:hidden">
           <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
           <div className="line w-5 h-[3px] bg-primary m-1.5"></div>
@@ -38,7 +38,7 @@ export default function Navbar() {
           <nav>
             <ul className="flex gap-7 justify-center items-center text-sm">
               {navLinks.map(({ name, link }) =>
-                <li key={name} className={`${pathName === link ? "bg-red-600 text-white font-normal" : ""} font-semibold text-primary cursor-pointer hover:underline underline-offset-4 py-1 px-2 rounded-md`}>
+                <li key={name} className={`${pathName === link ? "bg-red-600 text-white font-normal hover:no-underline" : ""} font-semibold text-primary cursor-pointer hover:underline underline-offset-4 py-1 px-2 rounded-md`}>
                   <Link className=" " href={link}>
                     {name}
                   </Link>
