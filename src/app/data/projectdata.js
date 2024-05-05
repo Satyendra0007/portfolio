@@ -113,7 +113,7 @@ const data = [
     name: "Shershah Collage Website",
     desc: "Created using HTML, Tailwind Css and JavaScrict",
     gitLink: "https://github.com/Satyendra0007/shershah-tailwind.git",
-    replLink: "https://https://shershah-tailwind.vercel.app/",
+    replLink: "https://shershah-tailwind.vercel.app/",
     avilable: true
   },
   {
@@ -121,7 +121,7 @@ const data = [
     name: "Shopify",
     desc: "Created using Bootstrap.",
     gitLink: "https://github.com/Satyendra0007/shopify.git",
-    replLink: "https://https://shopify-bootstrap-app.vercel.app/",
+    replLink: "https://shopify-bootstrap-app.vercel.app/",
     avilable: true
   },
   {
