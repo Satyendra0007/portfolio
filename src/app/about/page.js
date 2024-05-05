@@ -21,7 +21,6 @@ export default function page() {
       <section className='idials  py-7'>
         <h1 className='text-xl font-bold text-center mb-5'>My Idols</h1>
         <div className='cantainer p-5 space-y-6 md:space-y-0 md:flex justify-center items-center gap-11'>
-
           <div className="card px-4 py-6 bg-red-100 text-gray-800  backdrop-blur-3xl rounded-xl shadow-lg md:h-[82vh]  md:w-80">
             <div className="img">
               <Image className="w-full h-80" src={dhoni} alt=""></Image>
