@@ -15,6 +15,7 @@
 import shershah from "@/app/img/shershah.png"
 import imdb from "@/app/img/imdb.png"
 import shopify from "@/app/img/shopify.png"
+import password from "@/app/img/password.png"
 
 // const data = [
 //   {
@@ -108,6 +109,15 @@ import shopify from "@/app/img/shopify.png"
 
 
 const data = [
+
+  {
+    url: password,
+    name: "Password Manager",
+    desc: "Created using React and tailwind css",
+    gitLink: "https://github.com/Satyendra0007/passwordmanager.git",
+    replLink: "https://password--manager.vercel.app/",
+    avilable: true
+  },
   {
     url: shershah,
     name: "Shershah Collage Website",
