@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CiUser } from "react-icons/ci";
 import navLinks from "@/app/data/navLink"
 
 

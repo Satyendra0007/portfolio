@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { SiReplit } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import image1 from "@/app/images/image1.png";
+import bg from "@/app/img/bg.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -31,8 +32,8 @@ export default function Page() {
   return (
     <>
       <section className=" intro  mx-auto p-5 md:flex md:flex-row-reverse md:justify-around md:items-center" >
-        <div className="top md:w-1/2" data-aos="fade-left">
-          <Image height={500} width={500} priority="lazy" className="w-10/12 mx-auto" src={image1} alt="" />
+        <div className="top md:w-1/2 my-3 md:my-0" data-aos="fade-left">
+            <Image height={500} width={500} priority={true} quality={100} className="w-10/12 mx-auto z-20" src={image1} alt="" />
         </div>
         <div className="bottom flex justify-center items-center flex-col leading-5 md:w-1/2 md:text-lg" data-aos="fade-right">
           <div className="text-xl font-semibold md:2xl">Welcome !</div>
