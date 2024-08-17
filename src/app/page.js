@@ -4,8 +4,9 @@ import Typed from 'typed.js';
 import Image from 'next/image';
 import { SiReplit } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
-import image1 from "@/app/images/image1.png";
-import bg from "@/app/img/bg.png"
+import cover from "@/app/img/cover.jpg"
+import smiling from "@/app/img/smiling.png"
+import pin from "@/app/img/pin.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -31,9 +32,18 @@ export default function Page() {
 
   return (
     <>
-      <section className=" intro  mx-auto p-5 md:flex md:flex-row-reverse md:justify-around md:items-center" >
-        <div className="top md:w-1/2 my-3 md:my-0" data-aos="fade-left">
-            <Image height={500} width={500} priority={true} quality={100} className="w-10/12 mx-auto z-20" src={image1} alt="" />
+      <section className=" intro  mx-auto py-5 md:py-20 md:flex md:flex-row-reverse md:justify-around md:items-center" >
+        <div className="top md:w-1/2 my-10 md:my-0 " data-aos="fade-left">
+          {/* <div className="card md:w-1/2 p-[1px] bg-red-600 shadow-2xl rounded-full mx-auto">
+            <Image height={500} width={500} priority={true} quality={100} className="rounded-full" src={cover} alt="" />
+          </div> */}
+
+          <div className="card w-72 md:w-1/2 p-3 pb-12 bg-white shadow-2xl mx-auto -rotate-12 border border-gray-300 relative">
+            <Image height={500} width={500} priority={true} quality={100} className="w-8 absolute z-10 top-0 right-0" src={pin} alt="" />
+            <Image height={500} width={500} priority={true} quality={100} className="w-8 absolute z-10 bottom-2 right-2" src={smiling} alt="" />
+            <Image height={500} width={500} priority={true} quality={100} className="" src={cover} alt="" />
+          </div>
+
         </div>
         <div className="bottom flex justify-center items-center flex-col leading-5 md:w-1/2 md:text-lg" data-aos="fade-right">
           <div className="text-xl font-semibold md:2xl">Welcome !</div>
@@ -88,8 +98,8 @@ export default function Page() {
             className="box h-48 w-48  border-2 border-red-600 rounded-full flex flex-col justify-center items-center shadow-2xl text-sm" data-aos="fade-up">
             <h1 className="font-semi-bold text-2xl text-primary ">BCA</h1>
             <p>UNIVERSITY : VKSU</p>
-            <p>YEAR : 2020 - Till date</p>
-            <p>MARKS : __</p>
+            <p>YEAR : 2020 - 2023</p>
+            <p>MARKS : 71%</p>
           </div>
         </div>
       </section>
