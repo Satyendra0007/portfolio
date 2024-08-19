@@ -14,7 +14,7 @@ export default function Projectcard({ url, name, desc, gitLink, replLink, availa
     })
   }, [])
   return (
-    <div className="list border border-red-300 p-3 m-2 rounded-md shadow-xl space-y-2 mx-auto w-screen md:w-[28rem]" data-aos="fade-right">
+    <div className="list border border-red-300 p-3 m-2 rounded-md shadow-xl space-y-2 mx-auto w-screen md:w-[28rem] hover:shadow-2xl" data-aos="fade-right">
       <div className="disc text-sm space-y-3">
         <div className="image w-full">
           <Image src={url} alt=""></Image>
@@ -27,7 +27,7 @@ export default function Projectcard({ url, name, desc, gitLink, replLink, availa
       <div className="butons text-sm flex gap-3 justify-end ">
         <a target="_blank" href={gitLink}>
           <span
-            className="bg-red-100 text-[12px] py-1 px-2 rounded-md shadow-xl flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300 ease-in-out">Show
+            className="bg-red-100 text-[12px] py-1 px-2 rounded-md shadow-xl flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300 ease-in-out">
             Code
             <Image className="w-5" src={code} alt=""></Image>
           </span>
@@ -35,7 +35,7 @@ export default function Projectcard({ url, name, desc, gitLink, replLink, availa
         </a>
         <a href={replLink} target="_blank" >
           <span
-            className="bg-red-100 text-[12px] py-1 px-2 rounded-md  shadow-xl flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300 ease-in-out ">View
+            className="bg-red-100 text-[12px] py-1 px-2 rounded-md  shadow-xl flex justify-center items-center gap-2 hover:scale-105 transition-all duration-300 ease-in-out "> Live Preview
             <Image className="w-5" src={view} alt=""></Image>
           </span>
         </a>
