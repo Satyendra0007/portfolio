@@ -25,7 +25,7 @@ export default function Navbar() {
         <div id="hamburger" className="md:hidden">
           <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
           <div className="line w-5 h-[3px] bg-primary m-1.5"></div>
-          <div className="line w-6 h-[3px] bg-primary m-1.5"></div>
+          <div className="line w-6 h-[3px] bg-primary m-1.5"></div> 
         </div>
         <Link href="/">
           <div className="logo flex justify-center items-center gap-2 ">
@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* --------------------Nav link for sm devices-------------------- */}
         <div
           id="menu"
-          className="absolute top-0 -left-52  bg-red-100/80 w-52 h-screen border shadow-xl backdrop-blur-sm transition-all duration-700 ease-in-out md:hidden"
+          className="absolute top-0 -left-52  bg-red-100/80 w-52 h-screen border shadow-xl transition-all duration-700 ease-in-out md:hidden"
         >
           <div className="logo flex justify-center border-b border-b-red-400 py-4 ">
             {/* <CiUser size={"4rem"} color="red" /> */}
