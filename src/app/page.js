@@ -10,6 +10,9 @@ import pin from "@/app/img/pin.png"
 import bseb from "@/app/img/bseb.jpg"
 import kyp from "@/app/img/kyp.jpg"
 import vksu from "@/app/img/vksulogo.jpg"
+import niu from "@/app/img/niulogo.jpg"
+import linkedin from "@/app/images/linkedin.webp"
+import { FaLinkedin } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
@@ -74,10 +77,10 @@ export default function Page() {
                 <FaGithub />
               </span>
             </button>
-            <button id="Replit" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://replit.com/@Satyendra03" }}>
+            <button id="Replit" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://www.linkedin.com/in/satyendra-kumar-36163a2a9" }}>
               <span className="flex gap-1 justify-center items-center">
-                <p>Replit</p>
-                <SiReplit color="red" />
+                <p>LinkedIn</p>
+                <FaLinkedin color="blue" />
               </span>
             </button>
           </div>
@@ -128,6 +131,15 @@ export default function Page() {
             <p>UNIVERSITY : VKSU</p>
             <p>YEAR : 2020 - 2023</p>
             <p>MARKS : 71%</p>
+          </div>
+          <div
+            className="box h-48 w-48  border-2 border-red-600 rounded-full flex flex-col justify-center items-center shadow-2xl text-sm" data-aos="fade-up">
+            <div className="icon p-1 bg-white rounded-full absolute z-10 -top-2 right-6 border border-gray-600">
+              <Image height={500} width={500} priority={true} quality={100} className="w-10  rounded-full " src={niu} alt="" />
+            </div>
+            <h1 className="font-semi-bold text-2xl text-primary ">MCA</h1>
+            <p>UNIVERSITY : NIU</p>
+            <p>YEAR : 2024 - TILL DATE</p>
           </div>
         </div>
       </section>
