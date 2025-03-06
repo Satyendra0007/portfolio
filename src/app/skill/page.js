@@ -7,7 +7,7 @@ export default function page() {
 
   return (
     <div>
-      <section id="skills" className=" container mx-auto min-h-[72vh] ">
+      <section id="skills" className=" container mx-auto min-h-[72vh] md:max-w-5xl ">
         <h1 className="text-center my-4 text-2xl font-bold">Skills</h1>
         <div className="webDevlopment my-8">
           <h1 className="text-center my-5 text-sm font-semibold">Web Devlopment</h1>

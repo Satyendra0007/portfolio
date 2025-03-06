@@ -14,7 +14,7 @@ export default function Projectcard({ url, name, desc, gitLink, link }) {
     // })
   }, [])
   return (
-    <div className="list border border-red-300 p-3 m-2 rounded-md shadow-xl space-y-2 mx-auto w-screen md:w-80 hover:shadow-2xl h-80" data-aos="fade-right">
+    <div className="list border border-red-300 p-3 m-2 rounded-md shadow-xl space-y-2 mx-auto w-80 hover:shadow-2xl h-80" data-aos="fade-right">
       <div className="disc space-y-3">
         <div className="image w-full">
           <Image src={url} alt=""></Image>
