@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-2 bg-transparent z-10 w-full  ">
-        <div className=" mx-auto flex justify-between px-5 py-4 bg-red-100/50 shadow-xl rounded-full  backdrop-blur-sm md:py-3 w-[90%] md:max-w-5xl">
+        <div className=" mx-auto flex justify-between px-5 py-4 bg-red-100/50 shadow-xl rounded-full  backdrop-blur-sm md:py-3 w-[90%] md:max-w-6xl">
           <div id="hamburger" className="md:hidden cursor-pointer">
             <div className="line w-7 h-[3px] bg-primary m-1.5"></div>
             <div className="line w-5 h-[3px] bg-primary m-1.5"></div>

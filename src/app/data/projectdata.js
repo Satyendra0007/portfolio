@@ -20,7 +20,7 @@ const data = [
     url: idg,
     name: "Id Generator",
     desc: "This is a MERN app in which user can create account and generate his id card and dawnload it in png formate",
-    gitLink: "https://github.com/Satyendra0007/idgenerator-client.git",
+    gitLink: "https://github.com/Satyendra0007/idgenerator.git",
     link: "https://idgenerator.vercel.app/",
   },
   {
@@ -34,7 +34,7 @@ const data = [
     url: notemanager,
     name: "Notemanager",
     desc: "This is a MERN app with authentication system. user can create a accout and save, edit, and delete the note ",
-    gitLink: "https://github.com/Satyendra0007/notemanager-client.git",
+    gitLink: "https://github.com/Satyendra0007/notemanager.git",
     link: "https://notemanager-s.vercel.app/",
   },
 
@@ -49,7 +49,7 @@ const data = [
     url: shershah,
     name: "Shershah Collage Website",
     desc: "collage website frontend Created using HTML, Tailwind Css and JavaScrict",
-    gitLink: "https://github.com/Satyendra0007/shershah-tailwind.git",
+    gitLink: "https://github.com/Satyendra0007/shershah-new.git",
     link: "https://shershah-tailwind.vercel.app/",
   },
   {
@@ -63,7 +63,7 @@ const data = [
     url: imdb,
     name: "IMDB",
     desc: "Created using Nextjs, tailwind css ,and imdb api user can search and get movie details  .",
-    gitLink: "https://github.com/Satyendra0007/shopify.git",
+    gitLink: "https://github.com/Satyendra0007/movieflix.git",
     link: "https://movieflix-imdb.vercel.app/",
   },
 
