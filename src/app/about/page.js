@@ -49,7 +49,7 @@ export default function page() {
             </div>
             <div className="content">
               <h1 className="text-lg font-bold text-center my-4 text-primary ">MS Dhoni</h1>
-              <p className='text-center text-xs font-semibold tracking-wider '> I&apos;m huge of Mahendra Singh Dhoni, affectionately known as Captain Cool. Hailing from Ranchi, India, Dhoni has etched his name in the annals of cricketing history with his astute captaincy, lightning-quick glovework, and the ability to finish matches with unmatched calmness.</p>
+              <p className='text-center text-xs font-semibold tracking-wider '> I&apos;m huge fan of Mahendra Singh Dhoni, affectionately known as Captain Cool. Hailing from Ranchi, India, Dhoni has etched his name in the annals of cricketing history with his astute captaincy, lightning-quick glovework, and the ability to finish matches with unmatched calmness.</p>
             </div>
           </div>
 

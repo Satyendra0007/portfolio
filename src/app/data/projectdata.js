@@ -1,14 +1,21 @@
 import shershah from "@/app/img/shershah.png"
 import imdb from "@/app/img/imdb.png"
 import shopify from "@/app/img/shopify.png"
-import password from "@/app/img/password.png"
 import notemanager from "@/app/img/notemanager.png"
 import inyh from "@/app/img/inyh.png"
 import idg from "@/app/img/idg.png"
-import dp from "@/app/img/dp.png"
 import hl from "@/app/img/hl.png"
+import chatup from "@/app/img/chatup.png"
+
 
 const data = [
+  {
+    url: chatup,
+    name: "Chatup",
+    desc: "A fast and modern MERN-based chat app with secure login, one-to-one and group chats, real-time messaging via Socket.io, and a built-in AI assistant",
+    gitLink: "https://github.com/Satyendra0007/chatup.git",
+    link: "https://chatup-s.vercel.app/",
+  },
   {
     url: hl,
     name: "Happy Living",
@@ -38,13 +45,6 @@ const data = [
     link: "https://notemanager-s.vercel.app/",
   },
 
-  {
-    url: password,
-    name: "Password Manager",
-    desc: "Created using React and tailwind css for store passwords of different accounts ",
-    gitLink: "https://github.com/Satyendra0007/passwordmanager.git",
-    link: "https://password--manager.vercel.app/",
-  },
   {
     url: shershah,
     name: "Shershah Collage Website",

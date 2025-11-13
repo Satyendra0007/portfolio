@@ -15,6 +15,7 @@ import linkedin from "@/app/images/linkedin.webp"
 import { FaLinkedin } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { FaRegFilePdf } from "react-icons/fa6";
 
 export default function Page() {
 
@@ -77,10 +78,18 @@ export default function Page() {
                 <FaGithub />
               </span>
             </button>
-            <button id="Replit" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://www.linkedin.com/in/satyendra-kumar-36163a2a9" }}>
+            <button id="linkedin" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://www.linkedin.com/in/satyendra-kumar-36163a2a9" }}>
               <span className="flex gap-1 justify-center items-center">
                 <p>LinkedIn</p>
                 <FaLinkedin color="blue" />
+              </span>
+            </button>
+
+            <button id="resume" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://drive.google.com/file/d/1QRzi0FVNEkPf0bOJRphv5ivbv6jmqrxR/view?usp=sharing" }}>
+              <span className="flex gap-1 justify-center items-center">
+                <p>Resume</p>
+                {/* <FaLinkedin color="blue" /> */}
+                <FaRegFilePdf color='red' />
               </span>
             </button>
           </div>
