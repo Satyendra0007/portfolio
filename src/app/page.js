@@ -148,7 +148,8 @@ export default function Page() {
             </div>
             <h1 className="font-semi-bold text-2xl text-primary ">MCA</h1>
             <p>UNIVERSITY : NIU</p>
-            <p>YEAR : 2024 - TILL DATE</p>
+            <p>CGPA : 9.02</p>
+            <p>PURSUING</p>
           </div>
         </div>
       </section>

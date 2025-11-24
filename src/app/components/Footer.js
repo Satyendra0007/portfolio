@@ -7,7 +7,7 @@ import { FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="pt-5">
-      <div className="flex justify-center items-center gap-10 py-4 bg-red-100">
+      <div className="flex justify-center items-center gap-10 py-4 md:py-3 bg-red-100">
         <div className="bg-white/80 p-2.5 rounded-full shadow-xl hover:bg-red-100 cursor-pointer ">
           <a href="https://github.com/Satyendra0007" target="_blank">
             <FaGithub size={23} color='red' />
