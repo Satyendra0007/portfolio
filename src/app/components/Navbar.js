@@ -43,7 +43,7 @@ export default function Navbar() {
             <nav>
               <ul className="flex gap-7 justify-center items-center text-sm">
                 {navLinks.map(({ name, link }) =>
-                  <li key={name} className={`${pathName === link ? "bg-red-600 text-white font-normal hover:no-underline" : ""} font-semibold text-primary cursor-pointer hover:underline underline-offset-4 py-1 px-2 rounded-md`}>
+                  <li key={name} className={`${pathName === link ? "bg-red-600 text-white font-normal hover:no-underline" : ""} text-primary cursor-pointer hover:underline underline-offset-4 py-1 px-2 rounded-md`}>
                     <Link className=" " href={link}>
                       {name}
                     </Link>
