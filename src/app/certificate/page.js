@@ -4,7 +4,7 @@ import certificateData from '../data/certificatedata'
 
 export default function page() {
   return (
-    <div className='min-h-[72vh] md:min-h-[74vh] md:max-w-5xl mx-auto'>
+    <div className='min-h-[70vh] md:min-h-[74vh] md:max-w-5xl mx-auto'>
       <div className="head">
         <h1 className="text-center my-6 text-2xl font-bold">Certificates</h1>
       </div>
