@@ -12,6 +12,9 @@ import android from "@/app/images/android.png"
 import c from "@/app/images/c.png"
 import java from "@/app/images/java.png"
 import cpp from "@/app/images/c++.png"
+import razorpay from "@/app/images/razorpay.png"
+import socket from "@/app/images/socket.gif"
+import clerk from "@/app/images/clerk.webp"
 
 
 const webSkillData = [
@@ -54,6 +57,19 @@ const webSkillData = [
   {
     name: "express",
     logo: express
+  },
+  {
+    name: "socket.IO",
+    logo: socket
+  },
+
+  {
+    name: "razorPay",
+    logo: razorpay
+  },
+  {
+    name: "clerk",
+    logo: clerk
   },
 ]
 

@@ -2,7 +2,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 export default function CertificateCard({ icon, name, location, link }) {
   return (
-    <div className="flex justify-between items-center border border-gray-300 rounded-md shadow-md w-80 md:w-96 p-2" data-aos="fade-right">
+    <div className="flex justify-between items-center border border-gray-300 rounded-md shadow-md w-80  md:w-96 p-2" data-aos="fade-right">
       <div className='flex items-center gap-3 '>
         <div className="icon p-3 bg-gray-100 text-red-600 text-2xl rounded-full  ">
           {icon}
