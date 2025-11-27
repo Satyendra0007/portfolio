@@ -2,8 +2,15 @@ import { MdEmojiEvents } from "react-icons/md";
 import { FaCertificate } from "react-icons/fa";
 import { PiCertificateDuotone } from "react-icons/pi";
 import { IoIosBulb } from "react-icons/io";
+import { LiaCertificateSolid } from "react-icons/lia";
 
 const certificateData = [
+  {
+    icon: <LiaCertificateSolid />,
+    name: "Samsung Invotion",
+    location: "Noida International University",
+    link: "https://drive.google.com/file/d/1XmV48THue8mw0det3RUgkULaoMpwMv81/view?usp=sharing"
+  },
   {
     icon: <MdEmojiEvents />,
     name: "codefest",
