@@ -2,23 +2,36 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import navLinks from "@/app/data/navLink"
+import { useEffect } from "react";
 
 
 export default function Navbar() {
   const pathName = usePathname();
 
-  if (typeof window !== "undefined") {
-    document.getElementById("hamburger").addEventListener("click", (e) => {
+  useEffect(() => {
+
+    const showMenu = (e) => {
       e.stopPropagation();
       document.getElementById("menu").style.left = "0px";
       document.body.classList.add("stop-scrolling");
-    });
+    }
 
-    document.onclick = (e) => {
+    const hideMenu = (e) => {
       document.getElementById("menu").style.left = "-288px";
       document.body.classList.remove("stop-scrolling");
+    }
+
+    if (typeof window !== "undefined") {
+      document.getElementById("hamburger").addEventListener("click", showMenu);
+      document.addEventListener("click", hideMenu)
     };
-  }
+
+    return () => {
+      document.getElementById("hamburger").removeEventListener("click", showMenu)
+      document.removeEventListener("click", hideMenu)
+    }
+  }, [])
+
   return (
     <>
       <header className="sticky top-2 bg-transparent z-10 w-full  ">
