@@ -1,20 +1,32 @@
-import shershah from "@/app/img/shershah.png"
-import imdb from "@/app/img/imdb.png"
-import shopify from "@/app/img/shopify.png"
 import notemanager from "@/app/img/notemanager.png"
-import inyh from "@/app/img/inyh.png"
 import idg from "@/app/img/idg.png"
 import hl from "@/app/img/hl.png"
 import chatup from "@/app/img/chatup.png"
+import hotel from "@/app/img/hotel.png"
+import bcg from "@/app/img/bcg.png"
 
 
 const data = [
+  {
+    url: hotel,
+    name: "Hotel Booking",
+    desc: "A full-stack hotel booking platform built using the MERN stack. Includes secure login, room bookings, payments, OTP verification, and admin controls",
+    gitLink: "https://github.com/Satyendra0007/hotel.git",
+    link: "https://hotel-eight-vert.vercel.app/",
+  },
   {
     url: chatup,
     name: "Chatup",
     desc: "A fast and modern MERN-based chat app with secure login, one-to-one and group chats, real-time messaging via Socket.io, and a built-in AI assistant",
     gitLink: "https://github.com/Satyendra0007/chatup.git",
     link: "https://chatup-s.vercel.app/",
+  },
+  {
+    url: bcg,
+    name: "Bright Citrine Global",
+    desc: "A full-stack MERN web application featuring a modern, premium UI, secure authentication, an admin panel for content management, and a smooth, user-focused experience.",
+    gitLink: "https://github.com/Satyendra0007/bright-citrine-global.git",
+    link: "https://bright-citrine-global.vercel.app/",
   },
   {
     url: hl,
@@ -31,42 +43,12 @@ const data = [
     link: "https://idgenerator.vercel.app/",
   },
   {
-    url: inyh,
-    name: "INYH",
-    desc: "This is MERN app which can be used for houseHold services it has two user first customer and second provider user can rise a service and provider can provider a service (Under Development)",
-    gitLink: "https://github.com/Satyendra0007/INYH.git",
-    link: "https://inyh.vercel.app/",
-  },
-  {
     url: notemanager,
     name: "Notemanager",
     desc: "This is a MERN app with authentication system. user can create a accout and save, edit, and delete the note ",
     gitLink: "https://github.com/Satyendra0007/notemanager.git",
     link: "https://notemanager-s.vercel.app/",
   },
-
-  {
-    url: shershah,
-    name: "Shershah Collage Website",
-    desc: "collage website frontend Created using HTML, Tailwind Css and JavaScrict",
-    gitLink: "https://github.com/Satyendra0007/shershah-new.git",
-    link: "https://shershah-tailwind.vercel.app/",
-  },
-  {
-    url: shopify,
-    name: "Shopify",
-    desc: "Ecomerse site frontend Created using Bootstrap.",
-    gitLink: "https://github.com/Satyendra0007/shopify.git",
-    link: "https://shopify-bootstrap-app.vercel.app/",
-  },
-  {
-    url: imdb,
-    name: "IMDB",
-    desc: "Created using Nextjs, tailwind css ,and imdb api user can search and get movie details  .",
-    gitLink: "https://github.com/Satyendra0007/movieflix.git",
-    link: "https://movieflix-imdb.vercel.app/",
-  },
-
 
 ]
 

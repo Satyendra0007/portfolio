@@ -15,6 +15,7 @@ import cpp from "@/app/images/c++.png"
 import razorpay from "@/app/images/razorpay.png"
 import socket from "@/app/images/socket.gif"
 import clerk from "@/app/images/clerk.webp"
+import python from "@/app/images/python.png"
 
 
 const webSkillData = [
@@ -91,6 +92,10 @@ const pgSkillData = [
   {
     name: "android",
     logo: android
+  },
+  {
+    name: "python",
+    logo: python
   },
 
 ]

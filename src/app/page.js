@@ -18,7 +18,6 @@ import 'aos/dist/aos.css'
 import { FaRegFilePdf } from "react-icons/fa6";
 
 export default function Page() {
-
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -85,7 +84,7 @@ export default function Page() {
               </span>
             </button>
 
-            <button id="resume" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://drive.google.com/file/d/1QRzi0FVNEkPf0bOJRphv5ivbv6jmqrxR/view?usp=sharing" }}>
+            <button id="resume" className="py-2 px-3 text-sm rounded-lg shadow-xl ring-1 ring-red-300 md:hover:scale-105 hover:bg-red-200 transition-all duration-300 ease-in-out" onClick={() => { window.location.href = "https://drive.google.com/file/d/1oVkGAkTK0U9a01dNUfW0QNXPusiLh_PH/view?usp=sharing" }}>
               <span className="flex gap-1 justify-center items-center">
                 <p>Resume</p>
                 {/* <FaLinkedin color="blue" /> */}
