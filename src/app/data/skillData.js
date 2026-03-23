@@ -28,15 +28,15 @@ const webSkillData = [
     logo: css
   },
   {
-    name: "javasript",
+    name: "javascript",
     logo: js
   },
   {
-    name: "reactjs",
+    name: "react js",
     logo: react
   },
   {
-    name: "nextjs",
+    name: "next js",
     logo: nextjs
   },
   {
@@ -52,7 +52,7 @@ const webSkillData = [
     logo: mongodb
   },
   {
-    name: "nodejs",
+    name: "node js",
     logo: node
   },
   {
@@ -65,7 +65,7 @@ const webSkillData = [
   },
 
   {
-    name: "razorPay",
+    name: "razorpay",
     logo: razorpay
   },
   {

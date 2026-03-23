@@ -7,13 +7,13 @@ import { LiaCertificateSolid } from "react-icons/lia";
 const certificateData = [
   {
     icon: <LiaCertificateSolid />,
-    name: "Samsung Invotion",
+    name: "Samsung Innovation",
     location: "Noida International University",
     link: "https://drive.google.com/file/d/1XmV48THue8mw0det3RUgkULaoMpwMv81/view?usp=sharing"
   },
   {
     icon: <MdEmojiEvents />,
-    name: "codefest",
+    name: "Codefest",
     location: "Noida International University",
     link: "https://drive.google.com/file/d/1bZu_6FsJqYyQ8X1m1n-qRaInshNn9nch/view?usp=sharing"
   },
@@ -25,7 +25,7 @@ const certificateData = [
   },
   {
     icon: <PiCertificateDuotone />,
-    name: "working Model",
+    name: "Working Model",
     location: "Noida International University",
     link: "https://drive.google.com/file/d/1X4X5kXEow5Q24fFJUrETyRDKEddKE0ZI/view?usp=sharing"
   },
